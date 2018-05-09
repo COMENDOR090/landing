@@ -26,6 +26,16 @@
 				width: 30%;
 			}
 
+			#contacts input :not([type="submit"]){
+				border-radius: 10px;
+				border: 1px solid gray;
+			}
+
+			#contacts textarea{
+				border-radius: 10px;
+				border: 1px solid gray;
+			}
+
 			/* Области сайта */
 
 			#header .nav {
@@ -34,7 +44,7 @@
 
 			#header .nav li {
 				list-style-type: none;
-				display: inline;
+				display: inline-block;
 				margin-right: 15px;
 			}
 
@@ -151,7 +161,7 @@
 				<br>
 				<textarea type="text" name="message" cols="100" rows="10"></textarea>
 				<br>
-				<input type="submit">
+				<input type="submit" value="Отправить">
 			</form>
 		</div>
 		<!-- /#contacts -->
