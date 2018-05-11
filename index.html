@@ -27,12 +27,12 @@
 			}
 
 			#contacts form input:not([type="submit"]){
-				border-radius: 10px;
+				border-radius: 5px;
 				border: 1px solid gray;
 			}
 
 			#contacts textarea{
-				border-radius: 10px;
+				border-radius: 5px;
 				border: 1px solid gray;
 			}
 
@@ -46,11 +46,12 @@
 				list-style-type: none;
 				display: inline-block;
 				margin-right: 15px;
-				padding: 10px;
+				background: cyan;	
 			}
 
 			#header .nav li a{
 				text-decoration: none;
+				padding: 5px;
 			}
 
 			#header .nav li a:hover{
@@ -69,7 +70,7 @@
 			}
 
 			#portfolio .pictures img:hover{
-				border: 5px solid gray;
+				border: 2px solid red;
 			}
 
 			#contacts form label {
@@ -79,6 +80,11 @@
 			#footer .copyright {
 				color: rgb(17, 0, 255);
 				text-align: center;
+			}
+
+			#footer {
+				background-image: url(img/plastic_texture1361.jpg);
+				background-repeat: repeat;
 			}
 
 		</style>
@@ -156,15 +162,15 @@
 			<form method="post">
 				<label for="name">Имя</label>
 				<br>
-				<input type="text" id="name" name="name" size="40">
+				<input type="text" placeholder="Иван" id="name" name="name" size="40">
 				</br>
 				<label for="email">Email</label>
 				<br>
-				<input type="email" id="email" name="email" size="40">
+				<input type="email" placeholder="ivanivanovish@mail.ru" id="email" name="email" size="40">
 				</br>
 				<label for="message">Cообщение</label>
 				<br>
-				<textarea type="text" name="message" cols="100" rows="10"></textarea>
+				<textarea type="text" name="message" placeholder="Ваше сообщение" cols="100" rows="10"></textarea>
 				<br>
 				<input type="submit" value="Отправить">
 			</form>
@@ -172,8 +178,10 @@
 		<!-- /#contacts -->
 
 		<footer id="footer">
+			<div>
 			<p class="copyright">Роман Киселев 2018г.</p>
 			<a href="#header">Наверх</a>
+			</div>
 		</footer>
 	</body>
 </html>
