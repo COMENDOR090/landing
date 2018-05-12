@@ -1,187 +1,241 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charcet="utf-8">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-		<title>Роман Киселев веб-разарботчик</title>
-		<link href="css/styles.css" rel="stylesheet">
-		<style>
-			body {
-				/* следующие 2 стили распологаю элемент (body) по центру экрана */
-				width: 950px;
-				margin: 0 auto;
 
-				border: 1px dashed grey;
-				padding: 30px;
-			}
+<head>
+	<meta charcet="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Роман Киселев веб-разарботчик</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<style>
+		body {
+			/* следующие 2 стили распологаю элемент (body) по центру экрана */
+			width: 950px;
+			margin: 0 auto;
 
-			h2 {
-				color: green;
-			}
+			border: 1px dashed grey;
+			padding: 30px;
 
-			/* Общие стили */
 
-			.pictures img {
-				padding: 10px;
-				width: 30%;
-			}
+			
+		}
 
-			#contacts form input:not([type="submit"]){
-				border-radius: 5px;
-				border: 1px solid gray;
-			}
+		h2 {
+			color: green;
+		}
 
-			#contacts textarea{
-				border-radius: 5px;
-				border: 1px solid gray;
-			}
+		/* Общие стили */
 
-			/* Области сайта */
+		.pictures img {
+			padding: 10px;
+			width: 30%;
+		}
 
-			#header .nav {
-				padding-left: 0px;
-			}
+		/* Области сайта */
 
-			#header .nav li {
-				list-style-type: none;
-				display: inline-block;
-				margin-right: 15px;
-				background: cyan;	
-			}
+		#header .nav {
+			padding-left: 0px;
+		}
 
-			#header .nav li a{
-				text-decoration: none;
-				padding: 5px;
-			}
+		#header .nav li {
+			list-style-type: none;
+			display: inline-block;
+			margin-right: 15px;
 
-			#header .nav li a:hover{
-				color: rgb(250, 6, 6);
-				background-color: rgb(0, 153, 255);
-				border-bottom: 2px solid red;
-			}
+		}
 
-			#about .pictures img {
-				border: 2px solid aquamarine;
-			}
+		#header .nav li a {
+			text-decoration: none;
+			padding: 10px;
+			display: block;
+			border-bottom: 2px solid white;
+		}
 
-			#portfolio .pictures img {
-				border: 2px solid black;
+		#header .nav li a:hover {
+			color: rgb(250, 6, 6);
+			background-color: rgb(0, 153, 255);
+			border-bottom: 2px solid red;
+		}
 
-			}
+		#about .pictures img {
+			border: 2px solid aquamarine;
+		}
 
-			#portfolio .pictures img:hover{
-				border: 2px solid red;
-			}
+		#portfolio .pictures img {
+			border: 2px solid black;
 
-			#contacts form label {
-				font-weight: bold;
-			}
+		}
 
-			#footer .copyright {
-				color: rgb(17, 0, 255);
-				text-align: center;
-			}
+		#portfolio .pictures img:hover {
+			border: 2px solid red;
+		}
 
-			#footer {
-				background-image: url(img/plastic_texture1361.jpg);
-				background-repeat: repeat;
-			}
+		#contacts .info {
+			width: 40%;
+			border: 1px dotted green;
+			display: inline-block;
+		}
 
-		</style>
-	</head>
-	<body>
-		<header id="header">
-			<h1>Мой сайт</h1>
-			<nav>
-				<ul class="nav">
-					<li>
-						<a href="#about">О мне</a>
-					</li>
-					<li>
-						<a href="#portfolio">Портфолио</a>
-					</li>
-					<li>
-						<a href="#contacts">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		#contacts form {
+			display: inline-block;
+			width: 50%;
+			border: 1px dotted brown;
+		}
+		#contacts form label {
+			font-weight: bold;
+		}
 
-		<div id="about">
-			<h2>О мне</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lobortis neque. Mauris id eleifend enim, ac porta ex.
-				Nulla interdum quis sem et scelerisque. In semper consectetur fermentum. Nam lacinia laoreet mi, vel sagittis lacus ultricies
-				vitae. Duis eget libero non mauris pharetra tincidunt quis vel lorem. Morbi condimentum ac magna non efficitur. Morbi
-				luctus elementum mi tincidunt venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-				Curae; Cras tincidunt metus sit amet quam commodo egestas. Etiam ac tempor eros, sit amet porta nisl.
-			</p>
-			<div class="pictures">
-				<a href="https://wf.mail.ru/" target="_blank">
-					<img src="img/Warface.png" title="Открыть в новом окне">
-				</a>
-				<a href="https://trello.com/" target="_blank">
-					<img src="img/Trello.png" title="Открыть в новом окне">
-				</a>
-				<a href="https://www.google.ru/" target="_blank">
-					<img src="img/Google.png" title="Открыть в новом окне">
-				</a>
+		#contacts form input:not([type="submit"]) {
+			border-radius: 5px;
+			border: 1px solid gray;
+			padding: 5px;
+		}
+
+		#contacts form textarea {
+			border-radius: 5px;
+			border: 1px solid gray;
+		}
+
+		#footer .copyright {
+			color: rgb(17, 0, 255);
+			text-align: center;
+		}
+
+		#footer {
+			background-image: url(img/bg.jpg);
+			background-repeat: repeat-x;
+			/* background-repeat: repeat; */
+		}
+
+		/* popup */
+		#popup {
+			border: 1px solid black;
+			background-color: antiquewhite;
+			width: 400px;
+			position: absolute;
+			top: 100px;
+			left: 35%;
+			padding: 20px;
+		}
+ 	</style>
+</head>
+
+<body>
+	<header id="header">
+		<h1>Мой сайт</h1>
+		<nav>
+			<ul class="nav">
+				<li>
+					<a href="#about">О мне</a>
+				</li>
+				<li>
+					<a href="#portfolio">Портфолио</a>
+				</li>
+				<li>
+					<a href="#contacts">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="about">
+		<h2>О мне</h2>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lobortis neque. Mauris id eleifend enim, ac porta ex.
+			Nulla interdum quis sem et scelerisque. In semper consectetur fermentum. Nam lacinia laoreet mi, vel sagittis lacus ultricies
+			vitae. Duis eget libero non mauris pharetra tincidunt quis vel lorem. Morbi condimentum ac magna non efficitur. Morbi
+			luctus elementum mi tincidunt venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+			Curae; Cras tincidunt metus sit amet quam commodo egestas. Etiam ac tempor eros, sit amet porta nisl.
+		</p>
+		<div class="pictures">
+			<a href="https://wf.mail.ru/" target="_blank">
+				<img src="img/Warface.png" title="Открыть в новом окне">
+			</a>
+			<a href="https://trello.com/" target="_blank">
+				<img src="img/Trello.png" title="Открыть в новом окне">
+			</a>
+			<a href="https://www.google.ru/" target="_blank">
+				<img src="img/Google.png" title="Открыть в новом окне">
+			</a>
+		</div>
+	</div>
+	<!-- /#about -->
+
+	<div id="portfolio">
+		<h2>Портфолио</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lobortis neque. Mauris id eleifend enim, ac porta ex.
+			Nulla interdum quis sem et scelerisque. In semper consectetur fermentum. Nam lacinia laoreet mi, vel sagittis lacus ultricies
+			vitae. Duis eget libero non mauris pharetra tincidunt quis vel lorem. Morbi condimentum ac magna non efficitur. Morbi
+			luctus elementum mi tincidunt venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+			Curae; Cras tincidunt metus sit amet quam commodo egestas. Etiam ac tempor eros, sit amet porta nisl.
+		</p>
+		<div class="pictures">
+			<a href="https://wf.mail.ru/" target="_blank">
+				<img src="img/Warface.png" title="Открыть в новом окне">
+			</a>
+			<a href="https://trello.com/" target="_blank">
+				<img src="img/Trello.png" title="Открыть в новом окне">
+			</a>
+			<a href="https://www.google.ru/" target="_blank">
+				<img src="img/Google.png" title="Открыть в новом окне">
+			</a>
+		</div>
+	</div>
+	<!-- /#portfolio -->
+
+	<div id="contacts">
+		<h2>Контакты</h2>
+		<div class="info">
+				<p>
+						Aenean in justo arcu. Nam semper ultricies condimentum. Vestibulum consequat id enim a accumsan. Morbi vitae risus felis.
+						Phasellus finibus luctus urna, hendrerit maximus lacus ultricies ac. Quisque ex lectus, vulputate at ligula sed, tempor
+						vulputate arcu. Praesent sed arcu nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+						turpis egestas
+					</p>
 			</div>
-		</div>
-		<!-- /#about -->
+		
+		<form method="post">
+			<label for="name">Имя</label>
+			<br>
+			<input type="text" placeholder="Иван" id="name" name="name" size="40">
+			</br>
+			<label for="email">Email</label>
+			<br>
+			<input type="email" placeholder="ivanivanovish@mail.ru" id="email" name="email" size="40">
+			</br>
+			<label for="message">Cообщение</label>
+			<br>
+			<textarea name="message" placeholder="Ваше сообщение" cols="40" rows="10"></textarea>
+			<br>
+			<input type="submit" value="Отправить">
+		</form>
+	</div>
+	<!-- /#contacts -->
 
-		<div id="portfolio">
-			<h2>Портфолио</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lobortis neque. Mauris id eleifend enim, ac porta ex.
-				Nulla interdum quis sem et scelerisque. In semper consectetur fermentum. Nam lacinia laoreet mi, vel sagittis lacus ultricies
-				vitae. Duis eget libero non mauris pharetra tincidunt quis vel lorem. Morbi condimentum ac magna non efficitur. Morbi
-				luctus elementum mi tincidunt venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-				Curae; Cras tincidunt metus sit amet quam commodo egestas. Etiam ac tempor eros, sit amet porta nisl.
-			</p>
-			<div class="pictures">
-				<a href="https://wf.mail.ru/" target="_blank">
-					<img src="img/Warface.png" title="Открыть в новом окне">
-				</a>
-				<a href="https://trello.com/" target="_blank">
-					<img src="img/Trello.png" title="Открыть в новом окне">
-				</a>
-				<a href="https://www.google.ru/" target="_blank">
-					<img src="img/Google.png" title="Открыть в новом окне">
-				</a>
-			</div>
-		</div>
-		<!-- /#portfolio -->
-
-		<div id="contacts">
-			<h2>Контакты</h2>
-			<p>
-				Aenean in justo arcu. Nam semper ultricies condimentum. Vestibulum consequat id enim a accumsan. Morbi vitae risus felis.
-				Phasellus finibus luctus urna, hendrerit maximus lacus ultricies ac. Quisque ex lectus, vulputate at ligula sed, tempor
-				vulputate arcu. Praesent sed arcu nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-				turpis egestas
-			</p>
-			<form method="post">
-				<label for="name">Имя</label>
-				<br>
-				<input type="text" placeholder="Иван" id="name" name="name" size="40">
-				</br>
-				<label for="email">Email</label>
-				<br>
-				<input type="email" placeholder="ivanivanovish@mail.ru" id="email" name="email" size="40">
-				</br>
-				<label for="message">Cообщение</label>
-				<br>
-				<textarea type="text" name="message" placeholder="Ваше сообщение" cols="100" rows="10"></textarea>
-				<br>
-				<input type="submit" value="Отправить">
-			</form>
-		</div>
-		<!-- /#contacts -->
-
-		<footer id="footer">
-			<div>
+	<footer id="footer">
+		<div>
 			<p class="copyright">Роман Киселев 2018г.</p>
 			<a href="#header">Наверх</a>
-			</div>
-		</footer>
-	</body>
+		</div>
+	</footer>
+	<div id="popup">
+		<h2>Loren ipsum dolar</h2>
+		<p>
+			Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+		</p>
+		<a href="#" class="popup-close">Закрыть</a>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+
+			$(".popup-close").click(function(){
+				console.log("privet!");
+
+				$("#popup").hide();
+			});
+
+		});
+	</script>
+</body>
+
 </html>
